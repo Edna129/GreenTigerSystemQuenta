@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#d50000</color>
+    <color name="white100">#ffffff</color>
+    <color name="white">#fff</color>
+
+    <color name="snow">#fafafa</color>
+    <color name="white_smoke">#f5f5f5</color>
+    <color name="Isabelline">#eee</color>
+    <color name="platinum">#e0e0e0</color>
+    <color name="silver">#bdbdbd</color>
+    <color name="white38">#80f5f5f5</color>
+    <color name="taupeGray">#ff8e8e93</color>
+    <color name="oldLavender">#ff757575</color>
+    <color name="auroMetalSaurus">#ff777777</color>
+    <color name="outerSpace">#ff424242</color>
+    <!--because opacity is cool-->
+    <color name="black100">#000000</color>
+    <color name="black87">#E3000000</color>
+    <color name="black56">#8a000000</color>
+    <color name="black38">#61000000</color>
+    <color name="black24">#32000000</color>
+    <color name="black12">#14000000</color>
+    <color name="black7">#10000000</color>
+    <color name="black0">#00000000</color><!--transparent-->
+    <color name="transparent">#00000000</color>
+</resources>
