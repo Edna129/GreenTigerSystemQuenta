@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.example.a1.myapplication.R
-import com.example.a1.myapplication.domain.models.view.ModelQuenta
+import com.example.a1.myapplication.domain.models.view.ViewModelQuenta
 import kotlinx.android.synthetic.main.layout_quenta.view.*
 
 /**
@@ -15,16 +15,16 @@ import kotlinx.android.synthetic.main.layout_quenta.view.*
  */
 
 interface OnItemClick{
-    fun onClick(item: String)
+    fun onClick(item: ViewModelQuenta)
 }
 
 class QuentaListAdapter(
         var onItemClick: OnItemClick
 ) : RecyclerView.Adapter<QuentaListAdapter.ViewHolder>() {
 
-    private var list: ArrayList<ModelQuenta> = arrayListOf<ModelQuenta>()
+    private var list: ArrayList<ViewModelQuenta> = arrayListOf<ViewModelQuenta>()
 
-    fun setData(newList: ArrayList<ModelQuenta>){
+    fun setData(newList: ArrayList<ViewModelQuenta>){
         list.clear()
         list.addAll(newList)
         notifyDataSetChanged()
@@ -40,14 +40,14 @@ class QuentaListAdapter(
     }
 
     inner class ViewHolder(view: View): RecyclerView.ViewHolder(view){
-        fun bind(item: ModelQuenta){
+        fun bind(item: ViewModelQuenta){
             itemView.tvName.text = item.name
             itemView.tvWorld.text = item.worlds
             Glide.with(itemView)
                     .load(item.avatar)
                     .into(itemView.ivAvatar)
             itemView.setOnClickListener {
-                onItemClick.onClick(item.worlds)
+                onItemClick.onClick(item)
             }
         }
     }
