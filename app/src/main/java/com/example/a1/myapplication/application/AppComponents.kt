@@ -1,7 +1,7 @@
 package com.example.a1.myapplication.application
 
 import com.example.a1.myapplication.application.modules.ApplicationModule
-import com.example.a1.myapplication.presentation.LoginActivity
+import com.example.a1.myapplication.presentation.MainActivity
 import dagger.Component
 import javax.inject.Singleton
 
@@ -12,6 +12,5 @@ import javax.inject.Singleton
 @Singleton
 @Component(modules = arrayOf(ApplicationModule::class))
 interface AppComponents {
-    fun inject(loginActivity: LoginActivity)
 
 }
